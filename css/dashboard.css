@@ -47,6 +47,7 @@ body {
     padding: 0;
 }
 
+/* ============================================================ */
 /* Стилі для заголовка */
 header {
     background-color: #333;
@@ -79,10 +80,14 @@ nav a.active {
     box-shadow: 2px 3px 8px 1px rgb(45, 45, 45);
 }
 
+/* ============================================================= */
 /* Стилі для основного контенту */
 main {
     padding: 20px;
 }
+
+/* ====================================================================== */
+
 
 /* Стилі для статистики на дашборді */
 #statistics {
@@ -121,10 +126,51 @@ main {
         display: flex;
         flex-direction: column;
     }
-
-  
    
 }
+
+/* ======================================================== */
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th,
+td {
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+}
+/* ================================================================== */
 /* Стилі для футера */
 footer {
     padding-top: 100px;
