@@ -105,14 +105,15 @@ nav a.active {
     box-shadow: 2px 3px 8px 1px rgb(45, 45, 45);
 }
 
-/* Стилі для навігаційного меню на мобільних пристроях (при бажанні) */
+/* Адаптація для мобільних пристроїв */
 @media (max-width: 768px) {
     nav {
         display: flex;
         flex-direction: column;
     }
 
-  
+
+
 }
 
 main {
