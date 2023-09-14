@@ -91,6 +91,19 @@ main {
     margin-top: 20px;
 }
 
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    /* Зменшимо розмір секції statistics для діапазону 386px до 426px */
+    @media (min-width: 386px) and (max-width: 426px) {
+        #statistics {
+            font-size: 16px;
+            /* Зменшимо розмір шрифту */
+            margin-top: 10px;
+            /* Зменшимо відступ зверху */
+        }
+    }
+}
+
 .statistic-card {
     background-color: #fff;
     padding: 20px;
