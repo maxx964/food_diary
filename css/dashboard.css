@@ -67,6 +67,7 @@ nav a {
     margin: 0 20px;
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 nav a.active {
@@ -120,14 +121,8 @@ main {
         flex-direction: column;
     }
 
-    nav a {
-        margin: 10px 0;
-    }
-
-    .statistic-card {
-        min-width: auto;
-        margin: 10px 0;
-    }
+  
+   
 }
 /* Стилі для футера */
 footer {

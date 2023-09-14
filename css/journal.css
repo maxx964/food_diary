@@ -64,6 +64,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+   
 }
 
 /* Стилі для навігаційного меню */
@@ -88,6 +89,7 @@ nav a {
     /* Розмір шрифту */
     font-weight: bold;
     /* Напівжирний шрифт */
+    margin-bottom: 10px;
 }
 
 /* Змінюйте стилі для активного посилання, якщо потрібно */
@@ -110,9 +112,7 @@ nav a.active {
         flex-direction: column;
     }
 
-    nav a {
-        margin: 10px 0;
-    }
+  
 }
 
 main {
@@ -271,6 +271,7 @@ main {
     padding: 5px 10px;
     cursor: pointer;
 }
+
 
 /* ========================================================== */
 
