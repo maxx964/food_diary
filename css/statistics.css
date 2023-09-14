@@ -105,12 +105,14 @@ main {
 }
 
 .statistic-card {
+
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 10px;
+;
     flex: 1;
     min-width: 250px;
 }
@@ -126,18 +128,8 @@ main {
     color: #3498db;
 }
 
-/* Адаптація для мобільних пристроїв */
-@media (max-width: 768px) {
-    /* Зменшимо розмір секції statistics для діапазону 386px до 426px */
-    @media (min-width: 386px) and (max-width: 426px) {
-        .statistic-card {
-            font-size: 16px;
-            /* Зменшимо розмір шрифту */
-            margin-top: 10px;
-            /* Зменшимо відступ зверху */
-        }
-    }
-}
+
+
 
 /* Адаптація для мобільних пристроїв */
 @media (max-width: 768px) {
@@ -151,7 +143,7 @@ main {
     }
 
     .statistic-card {
-        min-width: auto;
+    
         margin: 10px 0;
     }
 }
