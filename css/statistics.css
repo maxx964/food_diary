@@ -138,9 +138,7 @@ main {
         flex-direction: column;
     }
 
-    nav a {
-        margin: 10px 0;
-    }
+   
 
     .statistic-card {
     
