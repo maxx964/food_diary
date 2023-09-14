@@ -1,0 +1,281 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    /*  посиланням (a) добавлено значення щоб прибирати підкрєслювання яке встановлене
+    за замовчуванням */
+
+    color: currentColor;
+    /* currentColor дає змогу унаслідовання кольорів шрифту 
+    від встановленого в (body)
+     перебиває значення кольору яке виставленно при зомовчувані браузером */
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* списку (ul) добавлено значення щоб прибирати крапки padding i margin */
+}
+
+img {
+    display: block;
+    /* потрібне встановленя для скидання кусочка 
+    проміжка в 4px місця яке браузер встановлює за замовчуванням
+    щоб елементи не злипалися */
+    max-width: 100%;
+    height: auto;
+}
+/* Основні стилі для сторінки */
+body {
+    font-family: 'Finlandica', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================================== */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===================================================== */
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Стилі для навігаційного меню */
+nav {
+    background-color: #3358ff;
+    /* Фоновий колір */
+    padding: 10px 0;
+    /* Внутрішні відступи зверху та знизу */
+    text-align: center;
+    /* Вирівнювання тексту по центру */
+}
+
+/* Стилі для посилань у навігаційному меню */
+nav a {
+    color: #fff;
+    /* Колір тексту */
+    text-decoration: none;
+    /* Відсутність підкреслення */
+    margin: 0 20px;
+    /* Зовнішні відступи між посиланнями */
+    font-size: 18px;
+    /* Розмір шрифту */
+    font-weight: bold;
+    /* Напівжирний шрифт */
+}
+
+/* Змінюйте стилі для активного посилання, якщо потрібно */
+nav a.active {
+    background-color: #fff;
+    /* Фоновий колір активного посилання */
+    color:#162161;
+    /* Колір тексту активного посилання */
+    border-radius: 5px;
+    /* Закруглені кути */
+    padding: 5px 15px;
+    /* Внутрішні відступи для активного посилання */
+    box-shadow: 2px 3px 8px 1px rgb(45, 45, 45);
+}
+
+/* Стилі для навігаційного меню на мобільних пристроях (при бажанні) */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+/* ============================================================ */
+
+/* Стилі для календаря */
+#calendar {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Загальні стилі для подій */
+.fc-event {
+    background-color: #3498db;
+    /* Колір фону події */
+    color: #fff;
+    /* Колір тексту події */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Заголовок календаря */
+.fc-header-toolbar {
+    background-color: #333;
+    /* Колір фону заголовка */
+    color: #fff;
+    /* Колір тексту заголовка */
+}
+
+/* Кнопки перемикання виду календаря */
+.fc-header-button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.fc-header-button:hover {
+    background-color: #555;
+}
+
+/* Заголовок місяця та року */
+.fc-toolbar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Кнопки для додавання та видалення подій */
+.fc-button-primary {
+    background-color: #e74c3c;
+    /* Колір фону кнопки додавання */
+    border: none;
+    color: #fff;
+    /* Колір тексту кнопки додавання */
+}
+
+.fc-button-primary:hover {
+    background-color: #c0392b;
+}
+
+.fc-button-secondary {
+    background-color: #f39c12;
+    /* Колір фону кнопки видалення */
+    border: none;
+    color: #fff;
+    /* Колір тексту кнопки видалення */
+}
+
+.fc-button-secondary:hover {
+    background-color: #d68910;
+}
+
+/* Стилі для вікна додавання подій */
+#event-form {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для форми додавання подій */
+#event-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#event-title,
+#event-date {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#event-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#event-form button:hover {
+    background-color: #2980b9;
+}
+
+/* ============================================================== */
+/* Стилі для контейнера списку подій */
+#events-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#events-container h3 {
+    font-size: 18px;
+}
+
+/* Стилі для списку подій */
+#events-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Стилі для кожної події в списку */
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Стилі для кнопки видалення події */
+.delete-button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* ========================================================== */
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #333;
+}

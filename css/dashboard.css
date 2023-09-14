@@ -1,0 +1,137 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    /*  посиланням (a) добавлено значення щоб прибирати підкрєслювання яке встановлене
+    за замовчуванням */
+
+    color: currentColor;
+    /* currentColor дає змогу унаслідовання кольорів шрифту 
+    від встановленого в (body)
+     перебиває значення кольору яке виставленно при зомовчувані браузером */
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* списку (ul) добавлено значення щоб прибирати крапки padding i margin */
+}
+
+img {
+    display: block;
+    /* потрібне встановленя для скидання кусочка 
+    проміжка в 4px місця яке браузер встановлює за замовчуванням
+    щоб елементи не злипалися */
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Основні стилі для сторінки */
+body {
+    font-family: 'Finlandica', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилі для заголовка */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стилі для навігаційного меню */
+nav {
+    background-color: #3358ff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a.active {
+    background-color: #fff;
+    color: #162161;
+    border-radius: 5px;
+    padding: 5px 15px;
+    box-shadow: 2px 3px 8px 1px rgb(45, 45, 45);
+}
+
+/* Стилі для основного контенту */
+main {
+    padding: 20px;
+}
+
+/* Стилі для статистики на дашборді */
+#statistics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.statistic-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.statistic-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.statistic-card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .statistic-card {
+        min-width: auto;
+        margin: 10px 0;
+    }
+}
+/* Стилі для футера */
+footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #333;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Щоденник</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css"
+      rel="stylesheet"
+    />
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="./css/journal.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Щоденник</h1>
+      <!-- Додайте інші елементи верхнього меню, які вам потрібні -->
+    </header>
+
+    <nav>
+      <a href="dashboard.html">Дашборд</a>
+      <a href="journal.html" class="active">Щоденник</a>
+      <a href="statistics.html">Статистика</a>
+    </nav>
+
+    <main>
+      <!-- Основний контент вашої сторінки буде тут -->
+      <h2>Записи у щоденнику</h2>
+      <!-- Тут ви можете відображати записи користувача, додавати нові тощо -->
+      <form id="event-form">
+        <label for="event-title">Назва події:</label>
+        <input type="text" id="event-title" required />
+        <br />
+        <label for="event-date">Дата:</label>
+        <input type="date" id="event-date" required />
+        <br />
+        <button type="submit">Додати подію</button>
+      </form>
+
+      <!-- Додайте контейнер для списку подій -->
+      <div id="events-container">
+        <h3>Список подій:</h3>
+        <ul id="events-list"></ul>
+      </div>
+    </main>
+
+    <footer>
+      <!-- Додайте інформацію в футер, якщо потрібно -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js"></script>
+    <script src="./js/journal.js"></script>
+  </body>
+</html>
