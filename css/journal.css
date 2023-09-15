@@ -101,9 +101,8 @@ nav a.active {
 margin: auto;
  margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #fff;
-    /* Фоновий колір активного посилання */
-    color:#162161;
+    background-color: #07f107aa;
+        color: #ebeced;
     /* Колір тексту активного посилання */
     border-radius: 5px;
     /* Закруглені кути */
