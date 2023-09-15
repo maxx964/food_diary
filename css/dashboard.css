@@ -86,6 +86,7 @@ main {
     padding: 20px;
 }
 
+
 /* ====================================================================== */
 
 
@@ -133,7 +134,7 @@ main {
 
 
 table {
-    width: 80%;
+ 
     margin: 20px auto;
     border-collapse: collapse;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -162,10 +163,83 @@ tr:hover {
 
 @media (max-width: 768px) {
     table {
-        width: 100%;
+
+        padding: 15px;
     }
 }
 /* ================================================================== */
+.calculator {
+ 
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+select,
+input[type="radio"] {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    display: none;
+    margin-top: 20px;
+}
+
+#calories {
+    font-weight: bold;
+}
+
+.fffff{
+    display: flex;
+}
+/* Медіазапит для мобільних пристроїв з шириною екрану менше 768px */
+@media (max-width: 768px) {
+    .calculator {
+ 
+        padding: 10px;
+    }
+
+    input[type="number"],
+    select,
+    input[type="radio"],
+    button {
+        width: 92%;
+    }
+}
+/* =========================================================================== */
+
 /* Стилі для футера */
 footer {
     padding-top: 100px;

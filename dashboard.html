@@ -31,7 +31,7 @@
     </nav>
 
     <main>
-      <h1>Список корисних сніданків</h1>
+      <!-- <h1>Список корисних сніданків</h1>
 
       <table border="1">
         <thead>
@@ -112,7 +112,69 @@
             >
           </td>
         </tfoot>
-      </table>
+      </table> -->
+      <!-- ========================================================================= -->
+      <div class="calculator">
+        <h2>Калькулятор норми калорій</h2>
+        <form id="calorie-form">
+          <div class="input-group">
+            <label for="height">Ріст, см:</label>
+            <input type="number" id="height" required />
+          </div>
+          <div class="input-group">
+            <label for="weight">Вага, кг:</label>
+            <input type="number" id="weight" required />
+          </div>
+          <div class="input-group">
+            <label for="age">Вік, років:</label>
+            <input type="number" id="age" required />
+          </div>
+          <div class="input-group">
+            <label>Стать:</label>
+            <div class="fffff">
+              <label for="male">Чоловік </label>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                required
+              />
+            </div>
+
+            <div class="fffff">
+              <label for="female">Жінка&nbsp&nbsp&nbsp;</label>
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="activity">Активність:</label>
+            <select id="activity" required>
+              <option value="1.2">Мінімальні нагрузки (сидяча робота)</option>
+              <option value="1.375">
+                Трохи денної активності і легкі вправи 1-3 раза на тиждень
+              </option>
+              <option value="1.55">
+                Тренування 4-5 разів на тиждень або робота з середнім фізичним
+                навантаженням
+              </option>
+              <!-- Додайте інші варіанти активності -->
+            </select>
+          </div>
+          <button type="submit">Розрахувати</button>
+        </form>
+        <div id="result">
+          <h2>Результати:</h2>
+          <p id="calories">Необхідна кількість калорій: 0 ккал/день</p>
+        </div>
+      </div>
+      <!-- ================================================================== -->
     </main>
 
     <footer>
