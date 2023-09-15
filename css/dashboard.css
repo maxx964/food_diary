@@ -52,14 +52,14 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 /* Стилі для навігаційного меню */
 nav {
     background-color: #3358ff;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -73,11 +73,15 @@ nav a {
 }
 
 nav a.active {
+        margin: auto;
+            width: 73px;
+            margin-bottom: 10px;
     background-color: #fff;
     color: #162161;
     border-radius: 5px;
     padding: 5px 15px;
     box-shadow: 2px 3px 8px 1px rgb(45, 45, 45);
+
 }
 
 /* ============================================================= */
@@ -202,6 +206,23 @@ input[type="radio"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+/* Стилі для мобільних пристроїв (за замовчуванням розширення екрану менше 768px) */
+@media (max-width: 768px) {
+
+    /* Приховуємо лейбл для активності на малих екранах */
+    .input-group label {
+        display: none;
+    }
+
+    /* Змінюємо стиль для випадаючого списку, зробимо його повний розмір */
+    .input-group select {
+        width: 100%;
+        margin-top: 10px;
+        /* Додайте потрібний відступ */
+    }
+}
+
+
 
 button {
     background-color: #007BFF;
