@@ -31,88 +31,6 @@
     </nav>
 
     <main>
-      <!-- <h1>Список корисних сніданків</h1>
-
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Номер</th>
-            <th>Сніданок</th>
-            <th>Середня порція (г)</th>
-            <th>Калорії (ккал)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Овсянка з фруктами</td>
-            <td>200</td>
-            <td>300</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Яйця з овочами</td>
-            <td>150</td>
-            <td>200</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Гречка з молоком</td>
-            <td>250</td>
-            <td>350</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Сирний сандвіч</td>
-            <td>180</td>
-            <td>250</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Фруктовий салат</td>
-            <td>120</td>
-            <td>150</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Гранола з горіхами</td>
-            <td>170</td>
-            <td>220</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Творог з медом і ягодами</td>
-            <td>200</td>
-            <td>280</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>Пюре з бананом і арахісовим маслом</td>
-            <td>220</td>
-            <td>320</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>Каша з квасолі</td>
-            <td>160</td>
-            <td>200</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Смузі</td>
-            <td>250</td>
-            <td>350</td>
-          </tr>
-        </tbody>
-
-        <tfoot>
-          <td colspan="4">
-            <strong
-              >Розмір порції взяті з урахуванням від середніх значень:</strong
-            >
-          </td>
-        </tfoot>
-      </table> -->
       <!-- ========================================================================= -->
       <div class="calculator">
         <h2>Калькулятор норми калорій</h2>
@@ -171,7 +89,7 @@
               </option>
             </select>
           </div>
-          <button type="submit">Розрахувати</button>
+          <button class="custom-btn btn-13" type="submit">Розрахувати</button>
         </form>
         <div id="result">
           <h2>Результати:</h2>
@@ -179,6 +97,57 @@
         </div>
       </div>
       <!-- ================================================================== -->
+      <section class="meal">
+        <div class="meal-section">
+          <h2>Виберіть страву</h2>
+         <div class="meal-buttons">
+          <button id="breakfastButton" class="meal-button custom-btn btn-13" data-meal="breakfast">Сніданок</button>
+          <button id="lunchButton" class="meal-button custom-btn btn-13" data-meal="lunch">Обід</button>
+          <button id="snackButton" class="meal-button custom-btn btn-13" data-meal="snack">Перекус</button>
+          <button id="dinnerButton" class="meal-button custom-btn btn-13" data-meal="dinner">Вечеря</button>
+        </div>
+
+          <div class="meal-list" id="breakfast-list">
+            <!-- Тут буде список сніданків -->
+          <ul id="mealList">
+  <li>Овсянка з фруктами (200 г) - 300 ккал</li>
+  <li>Яйця з овочами (150 г) - 200 ккал</li>
+  <li>Гречка з молоком (250 г) - 350 ккал</li>
+  <li>Сирний сандвіч (180 г) - 250 ккал</li>
+  <li>Фруктовий салат (120 г) - 150 ккал</li>
+  <li>Гранола з горіхами (170 г) - 220 ккал</li>
+  <li>Творог з медом і ягодами (200 г) - 280 ккал</li>
+
+          </div>
+
+ <div class="meal-list" id="lunch-list">
+  <!-- Тут буде список обідів -->
+   <ul id="mealListTwo">
+    <li>Суп з курки</li>
+    <li>Паста з тунцем</li>
+    <!-- Додайте інші страви для обіду -->
+  </ul>
+</div>
+
+          <div class="meal-list" id="snack-list">
+            <!-- Тут буде список перекусів -->
+            <ul id="mealListThree">
+              <li>Фрукти (яблука, банани)</li>
+              <li>Мигдальні горіхи</li>
+              <!-- Додайте інші страви для перекусу -->
+            </ul>
+          </div>
+
+          <div class="meal-list" id="dinner-list">
+            <!-- Тут буде список вечері -->
+            <ul id="mealListFour">
+              <li>Салат з курки</li>
+              <li>Смажений лосось</li>
+              <!-- Додайте інші страви для вечері -->
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
